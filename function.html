@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url('background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .func{
+        font-size: 130px;
+        justify-content: center;
+        display: flex;
+        color: white;
+        margin-top: 20px;
+    }
+    .list{
+        color: white;
+        font-size: 50px;
+        margin-top: -50px;
+        margin-left: 50px;
+    }
+    .prev {
+            display: block;
+            margin-top: 200px;
+            margin-left: 100px;
+            border: 3px solid black;
+            width: 10%;
+            padding: 5px;
+            font-size: 50px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            background-color: gray;
+            color: white;
+            text-shadow: 0px 3px 5px black;
+            transition: .3s;
+        }
+        .prev:hover{
+            background-color: black;
+        }
+        .next {
+            display: block;
+            margin-top: -70px;
+            margin-left: 1600px;
+            border: 3px solid black;
+            width: 10%;
+            padding: 5px;
+            font-size: 50px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            background-color: gray;
+            color: white;
+            text-shadow: 0px 3px 5px black;
+            transition: .3s;
+        }
+        .next:hover{
+            background-color: black;
+        }
+        .prex{
+            margin-top: -200px;
+        }
+
+        .list span{
+            position: relative;
+            top: -300px;
+            left: 500px;
+        }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="func">Functionalities</h1>
+        <ol class="list">
+            <li>Register</li>
+            <li>Deposit Money</li>
+            <li>Check Balance</li>
+            <li>Check Account</li>
+            <li>Delete Account</li>
+            <span>
+               <li>Withdraw</li>
+               <li>Edit Account</li>
+               <li>Transaction History</li>
+               <li>Exit</li>
+            </span>
+        </ol>
+        <div class="prex">
+           <a class="prev" href="sop.html">Prev</a>
+           <a class="next" href="ppt/index.html">Next</a>
+        </div>
+    </div>
+</body>
+
+</html>

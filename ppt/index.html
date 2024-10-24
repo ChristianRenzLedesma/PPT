@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .food-content {
+            text-shadow: 1px 3px 4px black;
+            color: white;
+            padding: 100px 0px;
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: -20px;
+            animation: fadeIn 1s ease-in; 
+            background: rgba(128, 128, 128, 0.462);
+            width: 40%;
+            left: 30%;
+            height: 30vh;
+            margin-bottom: 120px;
+            position: relative;
+        }
+
+        .food-content p {
+            font-size: 40px;
+        }
+
+        
+
+        .food-content a:hover {
+            background: black;
+            color: white;
+            text-shadow: 1px 1px 4px gray;
+            border: 2px solid gray;
+            box-shadow: 1px 1px 4px gray;
+        }
+
+        .food {
+            margin: 0px 0px -10px;
+        }
+
+        .btn .next, .btn .prev {
+            display: block;
+            border: 2px solid black;
+            width: 10%;
+            text-align: center;
+            position: relative;
+            top: -10px;
+            margin: 0px 5%;
+            font-size: 40px;
+            padding: 5px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            background: rgba(128, 128, 128, 0.616);
+            text-shadow: 1px 1px 4px white;
+            box-shadow: 1px 1px 4px black; 
+            transition: .3s;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center; 
+            margin-top: 20px; 
+            animation: fadeIn .8s ease-in-out;
+        }
+
+        .btn .next:hover,
+        .btn .prev:hover {
+            background: black;
+            color: white;
+            text-shadow: 1px 1px 4px gray;
+            border: 2px solid gray;
+            box-shadow: 1px 1px 4px gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="food-container">
+        <div class="food-content">
+            <h1 class="food">Order Listing System</h1>
+            <p>Presented By: Renz & Jefferson</p>
+        </div>
+        <div class="btn">
+            <a href="../function.html" class="prev">Prev</a>
+            <a href="respondent.html" class="next">Next</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement of the problem</title>
+    <style>
+        body {
+            background-image: url('bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .statement-content h1 {
+            text-shadow: 1px 3px 4px black;
+            color: #FFFFFF; 
+            font-size: 60px;
+            text-align: center;
+            animation: fadeIn .8s ease-in;
+        }
+
+        .statement-content p {
+            text-shadow: 1px 1px 4px black;
+            color: #FFFFFF;
+            font-size: 46px;
+            font-weight: 800;
+            text-align: center;
+            animation: fadeIn .8s ease-in; 
+            background: rgba(61, 53, 53, 0.418);
+        }
+
+        .btn .next, .btn .prev {
+            display: block;
+            border: 2px solid black;
+            width: 10%;
+            text-align: center;
+            position: relative;
+            top: -10px;
+            margin: 0px 5%;
+            font-size: 40px;
+            padding: 5px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            background: rgba(128, 128, 128, 0.616);
+            text-shadow: 1px 1px 4px white;
+            box-shadow: 1px 1px 4px black; 
+            transition: .3s;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center; 
+            margin-top: 20px; 
+            animation: fadeIn .8s ease-in-out;
+        }
+
+        .btn .next:hover,
+        .btn .prev:hover {
+            background: black;
+            color: white;
+            text-shadow: 1px 1px 4px gray;
+            border: 2px solid gray;
+            box-shadow: 1px 1px 4px gray;
+        }
+    </style>
+<body>
+    <div class="statement-container">
+        <div class="statement-content">
+            <h1>Statement Of The Problem</h1>
+            <p>The existing system, for taking food orders faces issues that impact its efficiency and customer satisfaction levels negatively. Mistakes and delays arise from manually processing orders while poor inventory control leads to both shortages and excess stock problems. MoreoverThese obstacles collectively diminish the effectiveness of the food ordering system, as a whole. Have an impact, on both business functions and customer satisfaction levels. </p>
+        </div>
+        <div class="btn">
+            <a href="respondent.html" class="prev">Prev</a>
+            <a href="functionalities.html" class="next">Next</a>
+        </div>
+    </div>
+</body>
+</html>

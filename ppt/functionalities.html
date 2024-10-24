@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .function-content {
+            animation: fadeIn .8s ease-in; 
+        }
+
+        .function-content h1 {
+            text-shadow: 1px 1px 4px black;
+            margin: 20px 30px;
+            font-size: 50px;
+            color: #FFFFFF;
+        }
+
+        .function-content ol {
+            margin: 0 30px;
+            color: white;
+            text-shadow: 1px 1px 4px black;
+            padding-left: 20px;
+            border-radius: 10px;
+            padding: 10px; 
+        }
+
+        .function-content ol li {
+            font-size: 30px;
+            margin: 10px 100px;
+        }
+
+        .function-content ol li ol {
+            margin-top: 5px;
+            padding-left: 20px; 
+            font-size: 25px; 
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn a {
+            display: block;
+            border: 2px solid black;
+            width: 10%;
+            text-align: center;
+            font-size: 40px;
+            padding: 5px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            background: rgba(128, 128, 128, 0.616);
+            text-shadow: 1px 1px 4px white;
+            box-shadow: 1px 1px 4px black; 
+            transition: 0.3s;
+            margin: 0 10px;
+        }
+
+        .btn a:hover {
+            background: black;
+            color: white;
+            text-shadow: 1px 1px 4px gray;
+            border: 2px solid gray;
+            box-shadow: 1px 1px 4px gray;
+        }
+
+        .continue,
+        .Add,
+        .Exit{
+            font-size: 45px;
+            font-weight: 800;
+            background: rgba(128, 128, 128, 0.473);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="function-container">
+        <div class="function-content">
+            <h1>Functionalities</h1>
+            <ol>
+                <li>
+                    <h3>Continue</h3>
+                    <ul>
+                        <li>
+                            <p class="continue">
+                                when you continue there are choices of meals, drinks coffee for example you choose a meals your going to order your meals
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Add Product</h3>
+                    <ul>
+                        <li>
+                            <p class="Add">
+                               when you Add Product There are choices of All Product, Meals, Drinks, & coffee in this function you can add a product you want
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Exit Program</h3>
+                    <ul>
+                        <li class="Exit">When you choose an exit function you exit the program and save your work</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="btn">
+            <a href="respondent.html" class="prev">Prev</a>
+            <a href="Ui.html" class="next">Next</a>
+        </div>
+    </div>
+</body>
+
+</html>
